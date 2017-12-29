@@ -1,6 +1,6 @@
 ---
 title: "More Works"
-date: 2017-12-20T17:00:00-01:00
+date: 2017-12-20T17:00:00-05:00
 draft: false
 ---
 

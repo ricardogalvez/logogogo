@@ -1,6 +1,6 @@
 ---
 title: "Drop Downs and Blown Off"
-date: 2017-12-19T17:00:00-12:00
+date: 2017-12-19T17:00:00-5:00
 draft: false
 ---
 

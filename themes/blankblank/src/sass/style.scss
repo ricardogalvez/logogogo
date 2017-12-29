@@ -1,0 +1,43 @@
+/// A new style
+
+@import 'vendor/include-media';
+
+$font-size: 62.5%;
+$font-family: sans-serif;
+
+$breakpoints: (phone: 20em, tablet: 48em, desktop: 64em);
+
+$base-text-color: #131313;
+$base-line-height: 1.5;
+$desktop-bg-color: #e3f3e3;
+$smaller-bg-color: #f1f1f1;
+html {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+body {
+  @include media(">phone", "<=tablet") {
+    background-color: $smaller-bg-color;
+    margin: auto 1em;
+    width: 90vw;
+  }
+
+  @include media('>desktop') {
+    background: $desktop-bg-color;
+    margin: auto 7em;
+  }
+
+  color: $base-text-color;
+  font-size: 1.6rem;
+  line-height: $base-line-height;
+}
+
+header {
+  background: $base-text-color;
+
+  a {
+    color: $desktop-bg-color;
+    font-size: 2.8rem;
+  }
+}

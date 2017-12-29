@@ -1,6 +1,6 @@
 ---
 title: "Readings Explorations Header Works"
-date: 2017-12-15T17:00:00-01:00
+date: 2017-12-15T17:00:00-05:00
 draft: false
 ---
 

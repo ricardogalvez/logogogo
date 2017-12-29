@@ -1,4 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "daily logging"
-theme = "blank"
+theme = "blankblank"
+[permalinks]
+  post = "/:year/:month/:title/"
