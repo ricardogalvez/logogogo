@@ -1,0 +1,26 @@
+html {
+  font-family: sans-serif;
+  font-size: 62.5%; }
+
+body {
+  color: #131313;
+  font-size: 1.6rem;
+  line-height: 1.5; }
+@media (min-width: 20.01em) and (max-width: 48em) {
+  body {
+    background-color: #f1f1f1;
+    margin: auto 1em;
+    width: 90vw; } }
+
+  @media (min-width: 64.01em) {
+    body {
+      background: #e3f3e3;
+      margin: auto 7em; } }
+
+header {
+  background: #131313; }
+  header a {
+    color: #e3f3e3;
+    font-size: 2.8rem; }
+
+/*# sourceMappingURL=style.css.map */
