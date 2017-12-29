@@ -399,19 +399,27 @@ body {
   line-height: 1.5; }
 @media (min-width: 20.01em) and (max-width: 48em) {
   body {
-    background-color: #f1f1f1;
-    margin: auto 1em;
-    width: 90vw; } }
+    background-color: #f1f1f1; } }
 
   @media (min-width: 64.01em) {
     body {
-      background: #e3f3e3;
-      margin: auto 7em; } }
+      background: #e3f3e3; } }
 
 header {
-  background: #131313; }
+  background: #131313;
+  padding: 1.6em; }
   header a {
-    color: #e3f3e3;
-    font-size: 2.8rem; }
+    font-size: 3vw;
+    color: #e3f3e3; }
+    @media (max-width: 56.66667rem) {
+      header a {
+        font-size: 1.7rem; } }
+    @media (min-width: 80rem) {
+      header a {
+        font-size: 2.4rem; } }
+
+main {
+  margin: auto 9vw;
+  width: 90vw; }
 
 /*# sourceMappingURL=style.css.map */

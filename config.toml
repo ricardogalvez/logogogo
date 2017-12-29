@@ -4,3 +4,5 @@ title = "daily logging"
 theme = "blankblank"
 [permalinks]
   post = "/:year/:month/:title/"
+[params]
+  author = "Ricardo Galvez"

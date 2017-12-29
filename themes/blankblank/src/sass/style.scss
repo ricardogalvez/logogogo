@@ -20,13 +20,13 @@ html {
 body {
   @include media(">phone", "<=tablet") {
     background-color: $smaller-bg-color;
-    margin: auto 1em;
-    width: 90vw;
+    //margin: auto 1em;
+    //width: 90vw;
   }
 
   @include media('>desktop') {
     background: $desktop-bg-color;
-    margin: auto 7em;
+    //margin: auto 7em;
   }
 
   color: $base-text-color;
@@ -36,9 +36,15 @@ body {
 
 header {
   background: $base-text-color;
+  padding: 1.6em;
 
   a {
+    @include responsive-font(3vw, 1.7rem, 2.4rem);
     color: $desktop-bg-color;
-    font-size: 2.8rem;
   }
+}
+
+main {
+  margin: auto 9vw;
+  width: 90vw;
 }
