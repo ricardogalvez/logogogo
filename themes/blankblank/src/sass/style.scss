@@ -1,5 +1,6 @@
 /// A new style
-
+@import 'vendor/normalize';
+@import 'vendor/viewport-units';
 @import 'vendor/include-media';
 
 $font-size: 62.5%;
