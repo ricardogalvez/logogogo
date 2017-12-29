@@ -3,9 +3,6 @@ title: "Readings Explorations Header Works"
 date: 2017-12-15T17:00:00-05:00
 draft: false
 ---
-
-***12.15.2017***
-
 ## Reading
 * helpful CSS Grid articles read:
   - [Breaking out with CSS Grid explained](https://rachelandrew.co.uk/archives/2017/06/01/breaking-out-with-css-grid-explained/)

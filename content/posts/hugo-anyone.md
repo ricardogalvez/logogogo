@@ -3,10 +3,7 @@ title: "Hugo Anyone"
 date: 2017-12-22T16:28:06-05:00
 draft: false
 ---
-
-***12.22.2017***
-### Hugo anyone?
-### Finishing up the Discovery Filtering works
+## Finishing up the Discovery Filtering works
 * unifying the filters
   - placing the filter init button and the filtering module in the same section of the DOM
   - giving them the same background colors so all the subcomponents are visually linked and unifying the controls

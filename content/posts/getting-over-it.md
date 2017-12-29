@@ -4,12 +4,11 @@ date: 2017-12-28T15:06:17-05:00
 draft: false
 tags: ["sketch"]
 ---
-
-### One must learn to be open.
+## One must learn to be open.
 
 So I'm going to be open. This is a beginning not an end. And at the end of it all, there is much to learn and gain.
 
-### Today:
+## Today:
 
   * More progress on the Filtering Project Overview & Schematic
   * TODO:

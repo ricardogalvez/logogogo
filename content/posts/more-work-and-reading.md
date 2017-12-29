@@ -3,17 +3,15 @@ title: "More Work and Reading"
 date: 2017-12-21T17:00:00-05:00
 draft: false
 ---
-
-***12.21.2017***
-### More work on the header
+## More work on the header
 * specifically login, presently there is some pretty gross misalignment, so having SD point it out, its kinda nice that I might be able to jump in and fix
 
-### Works w/ the dgx-svg-icon repo
+## Works w/ the dgx-svg-icon repo
 * updated that repo w/ some new icons and cleaning up many others there.
 * still need to go through and update them all
 * should set up an Automator task to run `svgo` when the files get added or updated...
 
-### Reading
+## Reading
 * last hour (or next week!) of work should be spent reading these articles on front end design and development. Now I can close all those pesky tabs and windows w/ things I need to read over.
   - Here's the list covering UX:
     + [The State of UX in 2018](https://trends.uxdesign.cc/)
@@ -52,4 +50,4 @@ draft: false
     + [Viewport sized typography with minimum and maximum sizes](https://eduardoboucas.com/blog/2015/06/18/viewport-sized-typography-with-minimum-and-maximum-sizes.html)
 
 
-#### Lastly: make this log a proper blog. do you dare?
+### Lastly: make this log a proper blog. do you dare?
