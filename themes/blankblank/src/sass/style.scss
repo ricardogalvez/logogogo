@@ -96,8 +96,20 @@ main {
 
 
 .site-tagList {
+  margin-bottom: 0;
+  position: relative;
+  top: 1.5em;
+  
+
   li {
     display: inline-block;
+    //font-size: 3em;
     list-style-type: none;
+
+    a {
+      color: $base-text-color;
+      @include responsive-font(4vw, 3em);
+      text-decoration: none;
+    }
   }
 }

@@ -527,9 +527,27 @@ main h1::before {
   width: 6vh;
 }
 
+.site-tagList {
+  margin-bottom: 0;
+  position: relative;
+  top: 1.5em;
+}
+
 .site-tagList li {
   display: inline-block;
   list-style-type: none;
+}
+
+.site-tagList li a {
+  color: #131313;
+  font-size: 4vw;
+  text-decoration: none;
+}
+
+@media (max-width: 75em) {
+  .site-tagList li a {
+    font-size: 3em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
