@@ -12,6 +12,8 @@ $base-text-color: #131313;
 $base-line-height: 1.5;
 $desktop-bg-color: #e3f3e3;
 $smaller-bg-color: #f1f1f1;
+
+
 html {
   font-family: $font-family;
   font-size: $font-size;
@@ -55,7 +57,7 @@ aside,
 footer {
   margin: auto 9vw;
   width: 90vw;
-
+  
 ///
 /// Develop a mixin to account for screen width automatically and size the <p> accordingly
 ///
@@ -65,5 +67,37 @@ footer {
     }
 
     max-width: 75%;
+  }
+}
+
+///
+/// does work for the headlines.
+/// 
+
+main {
+  border-bottom: 1vh solid $base-text-color;
+
+  h1 {
+    font-weight: 100;
+
+    &::before {
+      background: $base-text-color;
+      content: "";
+      display: block;
+      height: .25vh;
+      margin-bottom: 1em;
+      width: 6vh;
+    }
+  }
+}
+///
+/// Site Tags list(s)
+///
+
+
+.site-tagList {
+  li {
+    display: inline-block;
+    list-style-type: none;
   }
 }

@@ -1,0 +1,380 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "gulp.js",
+			"settings":
+			{
+				"buffer_size": 885,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/posts/streamline-ux-to-production.md",
+			"settings":
+			{
+				"buffer_size": 559,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/// A new style\n@import 'vendor/normalize';\n@import 'vendor/viewport-units';\n@import 'vendor/include-media';\n\n$font-size: 62.5%;\n$font-family: sans-serif;\n\n$breakpoints: (phone: 20em, tablet: 48em, desktop: 64em);\n\n$base-text-color: #131313;\n$base-line-height: 1.5;\n$desktop-bg-color: #e3f3e3;\n$smaller-bg-color: #f1f1f1;\nhtml {\n  font-family: $font-family;\n  font-size: $font-size;\n}\n\nbody {\n  @include media(\">phone\", \"<=tablet\") {\n    background-color: $smaller-bg-color;\n    //margin: auto 1em;\n    //width: 90vw;\n  }\n\n  @include media('>desktop') {\n    background: $desktop-bg-color;\n    //margin: auto 7em;\n  }\n\n  color: $base-text-color;\n  font-size: 1.6rem;\n  line-height: $base-line-height;\n}\n\nheader {\n  background: $base-text-color;\n  padding: 1.6em;\n  padding-left: 9vw;\n\n  a {\n    @include media('>desktop') {\n      display: block;\n      max-width: 45%;\n    }\n\n    @include responsive-font(4vw, 2em, 3.6em);\n    color: $desktop-bg-color;\n  }\n}\n\nmain,\naside,\nfooter {\n  margin: auto 9vw;\n  width: 90vw;\n\n///\n/// Develop a mixin to account for screen width automatically and size the <p> accordingly\n///\n  p {\n    @include media('>desktop') {\n      max-width: 50%;\n    }\n\n    max-width: 75%;\n  }\n}\n\n\n///\n/// Site Tags list(s)\n///\n\n\n.site-tagList {\n  \n}\n",
+			"file": "themes/blankblank/src/sass/style.scss",
+			"file_size": 1209,
+			"file_write_time": 131590632710000000,
+			"settings":
+			{
+				"buffer_size": 1264,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/blankblank/layouts/_default/single.html",
+			"settings":
+			{
+				"buffer_size": 508,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 204.0,
+		"last_filter": "preview",
+		"selected_items":
+		[
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"theme",
+				"ayu: Activate theme"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"select",
+				"UI: Select Skin"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"ayu",
+				"ayu: Activate theme"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 544.0
+	},
+	"console":
+	{
+		"height": 184.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ricardogalvez/Documents/logogogo",
+		"/Users/ricardogalvez/Documents/logogogo/content",
+		"/Users/ricardogalvez/Documents/logogogo/content/posts",
+		"/Users/ricardogalvez/Documents/logogogo/data",
+		"/Users/ricardogalvez/Documents/logogogo/static",
+		"/Users/ricardogalvez/Documents/logogogo/themes",
+		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank",
+		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/layouts",
+		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/layouts/_default",
+		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/layouts/partials",
+		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/src",
+		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/src/sass",
+		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/static",
+		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/static/css"
+	],
+	"file_history":
+	[
+		"/Users/ricardogalvez/Documents/logogogo/package.json",
+		"/Users/ricardogalvez/Documents/logogogo/.gitignore",
+		"/Users/ricardogalvez/Documents/header.investigate-HDR-44.md",
+		"/Users/ricardogalvez/Documents/log.md",
+		"/Users/ricardogalvez/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ricardogalvez/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 54.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"blankblank"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "gulp.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 885,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								228
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "content/posts/streamline-ux-to-production.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								559,
+								559
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "themes/blankblank/src/sass/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1261,
+								1261
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 177.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "themes/blankblank/layouts/_default/single.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 508,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								201
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "logogogo.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 347.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
