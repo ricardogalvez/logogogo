@@ -14,4 +14,4 @@ I'm not exactly sure where the name logogogo came from, but it popped into my he
 Much done and initialized
 * gulp set up
 * theme set up
-* using some cool viewport based units sass mixin(s) & a media query mixin the latter developed by Eduardo Boucas (@eduardoboucas) & Hugo Giraudel (@hugogiraudel) & the former by Eduardo Boucas.
+* using some cool viewport based units sass mixin(s) & a media query mixin. The latter developed by Eduardo Boucas (@eduardoboucas) & Hugo Giraudel (@hugogiraudel) & the former by Eduardo Boucas.
