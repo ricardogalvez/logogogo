@@ -61,12 +61,12 @@ footer {
 ///
 /// Develop a mixin to account for screen width automatically and size the <p> accordingly
 ///
-  p {
+  p,
+  ul {
     @include media('>desktop') {
       max-width: 50%;
     }
-
-    max-width: 75%;
+    max-width: 65%;
   }
 }
 

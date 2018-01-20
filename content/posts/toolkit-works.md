@@ -2,6 +2,7 @@
 title: "Toolkit Works"
 date: 2017-12-14T17:00:05-05:00
 draft: false
+categories: ["front end", "style guide"]
 ---
 ## Progress
 

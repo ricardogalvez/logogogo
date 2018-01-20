@@ -497,15 +497,21 @@ footer {
 }
 
 main p,
+main ul,
 aside p,
-footer p {
-  max-width: 75%;
+aside ul,
+footer p,
+footer ul {
+  max-width: 65%;
 }
 
 @media (min-width: 64.01em) {
   main p,
+  main ul,
   aside p,
-  footer p {
+  aside ul,
+  footer p,
+  footer ul {
     max-width: 50%;
   }
 }

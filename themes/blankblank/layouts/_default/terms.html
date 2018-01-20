@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
-	<main class="site-home__page">
-		{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
-		{{ range $paginator.Pages }}
+	<main class="site-terms__page">
+		{{ $paginator := .Paginate (where .Data.Terms.Alphabetical) }}
+		{{ range $paginator.Data }}
 			{{ partial "summary.html" . }}
 		{{ end }}
 		{{ partial "pagination.html" . }}
