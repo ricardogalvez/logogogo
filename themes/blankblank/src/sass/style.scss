@@ -57,7 +57,7 @@ aside,
 footer {
   margin: auto 9vw;
   width: 90vw;
-  
+
 ///
 /// Develop a mixin to account for screen width automatically and size the <p> accordingly
 ///
@@ -72,22 +72,31 @@ footer {
 
 ///
 /// does work for the headlines.
-/// 
+///
 
 main {
   border-bottom: 1vh solid $base-text-color;
 
   h1 {
-    font-weight: 100;
+    font-weight: 300;
+    margin-bottom: 0;
 
     &::before {
       background: $base-text-color;
       content: "";
       display: block;
       height: .25vh;
-      margin-bottom: 1em;
+      margin-bottom: 0.45em;
       width: 6vh;
     }
+  }
+
+  h2 {
+    font-weight: 100;
+  }
+  time {
+    color: lighten($base-text-color, 50%);
+    font-size: 0.75em;
   }
 }
 ///
@@ -99,7 +108,7 @@ main {
   margin-bottom: 0;
   position: relative;
   top: 1.5em;
-  
+
 
   li {
     display: inline-block;
