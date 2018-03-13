@@ -455,38 +455,58 @@ body {
 
 @media (min-width: 64.01em) {
   body {
-    background: #e3f3e3;
+    background-color: #e3f3e3;
+    background-image: linear-gradient(-3deg, #e3f3e3 72%, #131313 0);
+    background-repeat: no-repeat;
   }
 }
 
-header {
+.site a:link, .site a:visited, .site a:hover, .site a:active {
+  color: #131313;
+}
+
+.site__header {
   background: #131313;
+  background-image: linear-gradient(3deg, #131313 88%, #e3f3e3 0);
+  background-repeat: no-repeat;
+  height: 9vh;
   padding: 1.6em;
   padding-left: 9vw;
 }
 
-header a {
+.site__header a {
   font-size: 4vw;
   color: #e3f3e3;
 }
 
 @media (min-width: 64.01em) {
-  header a {
+  .site__header a {
     display: block;
     max-width: 45%;
+  }
+  .site__header a a:link,
+  .site__header a a:visited {
+    color: #e3f3e3;
   }
 }
 
 @media (max-width: 50em) {
-  header a {
+  .site__header a {
     font-size: 2em;
   }
 }
 
 @media (min-width: 90em) {
-  header a {
+  .site__header a {
     font-size: 3.6em;
   }
+}
+
+.site__title a:link,
+.site__title a:visited {
+  color: #e3f3e3;
+  font-weight: 100;
+  line-height: 1.1;
 }
 
 main,
@@ -510,10 +530,6 @@ footer p {
   }
 }
 
-main {
-  border-bottom: 1vh solid #131313;
-}
-
 main h1 {
   font-weight: 300;
   margin-bottom: 0;
@@ -535,6 +551,10 @@ main h2 {
 main time {
   color: #939393;
   font-size: 0.75em;
+}
+
+aside ul {
+  list-style: none;
 }
 
 .site-tagList {

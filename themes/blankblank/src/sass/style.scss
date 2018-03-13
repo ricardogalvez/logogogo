@@ -27,7 +27,9 @@ body {
   }
 
   @include media('>desktop') {
-    background: $desktop-bg-color;
+    background-color: $desktop-bg-color;
+    background-image: linear-gradient(-3deg, $desktop-bg-color 72%, $base-text-color 0);
+    background-repeat: no-repeat;
     //margin: auto 7em;
   }
 
@@ -36,21 +38,85 @@ body {
   line-height: $base-line-height;
 }
 
-header {
-  background: $base-text-color;
-  padding: 1.6em;
-  padding-left: 9vw;
 
+.site {
   a {
-    @include media('>desktop') {
-      display: block;
-      max-width: 45%;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $base-text-color;
     }
+  }
+  &__header {
+    background: $base-text-color;
+    background-image: linear-gradient(3deg, $base-text-color 88%, $desktop-bg-color 0);
+    background-repeat: no-repeat;
+    height: 9vh;
+    padding: 1.6em;
+    padding-left: 9vw;
 
-    @include responsive-font(4vw, 2em, 3.6em);
-    color: $desktop-bg-color;
+    a {
+      @include media('>desktop') {
+        display: block;
+        max-width: 45%;
+
+        a:link,
+        a:visited {
+          color: $desktop-bg-color;
+        }
+      }
+
+      @include media('<=desktop') {
+
+      }
+
+      @include responsive-font(4vw, 2em, 3.6em);
+      color: $desktop-bg-color;
+    }
+  }
+
+  &__title {
+
+    a:link,
+    a:visited {
+      color: $desktop-bg-color;
+      font-weight: 100;
+      line-height: 1.1;
+    }
   }
 }
+
+// header {
+//   background: $base-text-color;
+//   background-image: linear-gradient(3deg, $base-text-color 88%, $desktop-bg-color 0);
+//   background-repeat: no-repeat;
+//   height: 9vh;
+//   padding: 1.6em;
+//   padding-left: 9vw;
+//
+//   a {
+//     @include media('>desktop') {
+//       display: block;
+//       max-width: 45%;
+//
+//       a:link,
+//       a:visited {
+//         color: $desktop-bg-color;
+//       }
+//     }
+//
+//     @include media('<=desktop') {
+//
+//     }
+//
+//     @include responsive-font(4vw, 2em, 3.6em);
+//     color: $desktop-bg-color;
+//   }
+// }
+
+
+
 
 main,
 aside,
@@ -75,7 +141,7 @@ footer {
 ///
 
 main {
-  border-bottom: 1vh solid $base-text-color;
+  //border-bottom: 1vh solid $base-text-color;
 
   h1 {
     font-weight: 300;
@@ -99,6 +165,21 @@ main {
     font-size: 0.75em;
   }
 }
+
+///
+/// Aside Specific styles
+///
+
+
+
+aside {
+  ul {
+    list-style: none;
+  }
+}
+
+
+
 ///
 /// Site Tags list(s)
 ///
