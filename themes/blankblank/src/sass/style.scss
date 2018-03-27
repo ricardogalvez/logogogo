@@ -13,6 +13,7 @@ $base-line-height: 1.5;
 $desktop-bg-color: #e3f3e3;
 $smaller-bg-color: #f1f1f1;
 
+$site-light-text: $desktop-bg-color;
 
 html {
   font-family: $font-family;
@@ -28,7 +29,7 @@ body {
 
   @include media('>desktop') {
     background-color: $desktop-bg-color;
-    background-image: linear-gradient(-3deg, $desktop-bg-color 72%, $base-text-color 0);
+    background-image: linear-gradient(-2deg, #e3f3e3 74%, #131313 0);
     background-repeat: no-repeat;
     //margin: auto 7em;
   }
@@ -48,9 +49,10 @@ body {
       color: $base-text-color;
     }
   }
+
   &__header {
     background: $base-text-color;
-    background-image: linear-gradient(3deg, $base-text-color 88%, $desktop-bg-color 0);
+    //background-image: linear-gradient(3deg, $base-text-color 88%, $desktop-bg-color 0);
     background-repeat: no-repeat;
     height: 9vh;
     padding: 1.6em;
@@ -83,6 +85,18 @@ body {
       color: $desktop-bg-color;
       font-weight: 100;
       line-height: 1.1;
+    }
+  }
+
+  .home-page {
+    &__latestPosts {
+      color: $site-light-text;
+    }
+  }
+
+  .page {
+    &__latestPosts {
+      font-style: italic;
     }
   }
 }

@@ -456,7 +456,7 @@ body {
 @media (min-width: 64.01em) {
   body {
     background-color: #e3f3e3;
-    background-image: linear-gradient(-3deg, #e3f3e3 72%, #131313 0);
+    background-image: linear-gradient(-2deg, #e3f3e3 74%, #131313 0);
     background-repeat: no-repeat;
   }
 }
@@ -467,7 +467,6 @@ body {
 
 .site__header {
   background: #131313;
-  background-image: linear-gradient(3deg, #131313 88%, #e3f3e3 0);
   background-repeat: no-repeat;
   height: 9vh;
   padding: 1.6em;
@@ -507,6 +506,14 @@ body {
   color: #e3f3e3;
   font-weight: 100;
   line-height: 1.1;
+}
+
+.site .home-page__latestPosts {
+  color: #e3f3e3;
+}
+
+.site .page__latestPosts {
+  font-style: italic;
 }
 
 main,

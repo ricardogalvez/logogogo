@@ -1,5 +1,6 @@
-	<aside class="home-page__latestPosts">
-			<h3>LATEST POSTS</h3>
+	<aside {{ if .IsHome }}class="home-page__latestPosts" {{ else }} class="page__latestPosts" {{ end }}>
+
+			<h3 class="init">LATEST POSTS</h3>
 				<ul>
 					{{ range .Site.Pages }}
 					<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
