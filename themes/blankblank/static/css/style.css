@@ -508,11 +508,11 @@ body {
   line-height: 1.1;
 }
 
-.site .home-page__latestPosts {
+.site .home-page__latestPosts h3 {
   color: #e3f3e3;
 }
 
-.site .page__latestPosts {
+.site .page__latestPosts h3 {
   font-style: italic;
 }
 

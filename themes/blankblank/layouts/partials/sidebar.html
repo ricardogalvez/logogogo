@@ -1,4 +1,4 @@
-	<aside {{ if .IsHome }}class="home-page__latestPosts" {{ else }} class="page__latestPosts" {{ end }}>
+	<aside class="{{ if .IsHome }}home-page__latestPosts {{ else }} page__latestPosts  {{ end }}">
 
 			<h3 class="init">LATEST POSTS</h3>
 				<ul>

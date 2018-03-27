@@ -90,13 +90,17 @@ body {
 
   .home-page {
     &__latestPosts {
-      color: $site-light-text;
+      h3 {
+        color: $site-light-text;
+      }
     }
   }
 
   .page {
     &__latestPosts {
-      font-style: italic;
+      h3 {
+        font-style: italic;
+      }
     }
   }
 }
