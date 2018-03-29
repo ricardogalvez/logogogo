@@ -3,35 +3,42 @@
 	{
 		"selected_items":
 		[
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "gulp.js",
-			"settings":
-			{
-				"buffer_size": 885,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "content/posts/streamline-ux-to-production.md",
 			"settings":
 			{
-				"buffer_size": 559,
+				"buffer_size": 988,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "/// A new style\n@import 'vendor/normalize';\n@import 'vendor/viewport-units';\n@import 'vendor/include-media';\n\n$font-size: 62.5%;\n$font-family: sans-serif;\n\n$breakpoints: (phone: 20em, tablet: 48em, desktop: 64em);\n\n$base-text-color: #131313;\n$base-line-height: 1.5;\n$desktop-bg-color: #e3f3e3;\n$smaller-bg-color: #f1f1f1;\nhtml {\n  font-family: $font-family;\n  font-size: $font-size;\n}\n\nbody {\n  @include media(\">phone\", \"<=tablet\") {\n    background-color: $smaller-bg-color;\n    //margin: auto 1em;\n    //width: 90vw;\n  }\n\n  @include media('>desktop') {\n    background: $desktop-bg-color;\n    //margin: auto 7em;\n  }\n\n  color: $base-text-color;\n  font-size: 1.6rem;\n  line-height: $base-line-height;\n}\n\nheader {\n  background: $base-text-color;\n  padding: 1.6em;\n  padding-left: 9vw;\n\n  a {\n    @include media('>desktop') {\n      display: block;\n      max-width: 45%;\n    }\n\n    @include responsive-font(4vw, 2em, 3.6em);\n    color: $desktop-bg-color;\n  }\n}\n\nmain,\naside,\nfooter {\n  margin: auto 9vw;\n  width: 90vw;\n\n///\n/// Develop a mixin to account for screen width automatically and size the <p> accordingly\n///\n  p {\n    @include media('>desktop') {\n      max-width: 50%;\n    }\n\n    max-width: 75%;\n  }\n}\n\n\n///\n/// Site Tags list(s)\n///\n\n\n.site-tagList {\n  \n}\n",
 			"file": "themes/blankblank/src/sass/style.scss",
-			"file_size": 1209,
-			"file_write_time": 131590632710000000,
 			"settings":
 			{
-				"buffer_size": 1264,
+				"buffer_size": 1824,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/posts/the-logs-log.md",
+			"settings":
+			{
+				"buffer_size": 433,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -39,7 +46,16 @@
 			"file": "themes/blankblank/layouts/_default/single.html",
 			"settings":
 			{
-				"buffer_size": 508,
+				"buffer_size": 444,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 896,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -118,7 +134,6 @@
 		"/Users/ricardogalvez/Documents/logogogo/content",
 		"/Users/ricardogalvez/Documents/logogogo/content/posts",
 		"/Users/ricardogalvez/Documents/logogogo/data",
-		"/Users/ricardogalvez/Documents/logogogo/static",
 		"/Users/ricardogalvez/Documents/logogogo/themes",
 		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank",
 		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/layouts",
@@ -126,13 +141,17 @@
 		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/layouts/partials",
 		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/src",
 		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/src/sass",
+		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/src/sass/partials",
+		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/src/sass/vendor",
 		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/static",
 		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/static/css"
 	],
 	"file_history":
 	[
-		"/Users/ricardogalvez/Documents/logogogo/package.json",
+		"/Users/ricardogalvez/Documents/logogogo/themes/blankblank/static/css/style.css",
+		"/Users/ricardogalvez/Documents/logogogo/gulpfile.js",
 		"/Users/ricardogalvez/Documents/logogogo/.gitignore",
+		"/Users/ricardogalvez/Documents/logogogo/package.json",
 		"/Users/ricardogalvez/Documents/header.investigate-HDR-44.md",
 		"/Users/ricardogalvez/Documents/log.md",
 		"/Users/ricardogalvez/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
@@ -140,7 +159,7 @@
 	],
 	"find":
 	{
-		"height": 54.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -172,54 +191,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "gulp.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 885,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								218,
-								228
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "content/posts/streamline-ux-to-production.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 559,
+						"buffer_size": 988,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								559,
-								559
+								116,
+								116
 							]
 						],
 						"settings":
@@ -234,20 +223,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "themes/blankblank/src/sass/style.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1264,
+						"buffer_size": 1824,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1261,
-								1261
+								1778,
+								1778
 							]
 						],
 						"settings":
@@ -257,33 +246,97 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 177.0,
+						"translation.y": 798.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "themes/blankblank/layouts/_default/single.html",
+					"buffer": 2,
+					"file": "content/posts/the-logs-log.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 508,
+						"buffer_size": 433,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								213,
-								201
+								47,
+								47
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "themes/blankblank/layouts/_default/single.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								716,
+								716
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JavaScript (Gulpfile).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -301,7 +354,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 51.0
 	},
 	"layout":
 	{
@@ -312,11 +365,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":

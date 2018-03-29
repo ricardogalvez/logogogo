@@ -13,6 +13,7 @@ $base-line-height: 1.5;
 $desktop-bg-color: #e3f3e3;
 $smaller-bg-color: #f1f1f1;
 
+$site-light-text: $desktop-bg-color;
 
 html {
   font-family: $font-family;
@@ -27,7 +28,9 @@ body {
   }
 
   @include media('>desktop') {
-    background: $desktop-bg-color;
+    background-color: $desktop-bg-color;
+    background-image: linear-gradient(-2deg, #e3f3e3 74%, #131313 0);
+    background-repeat: no-repeat;
     //margin: auto 7em;
   }
 
@@ -36,21 +39,102 @@ body {
   line-height: $base-line-height;
 }
 
-header {
-  background: $base-text-color;
-  padding: 1.6em;
-  padding-left: 9vw;
 
+.site {
   a {
-    @include media('>desktop') {
-      display: block;
-      max-width: 45%;
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $base-text-color;
     }
+  }
 
-    @include responsive-font(4vw, 2em, 3.6em);
-    color: $desktop-bg-color;
+  &__header {
+    background: $base-text-color;
+    //background-image: linear-gradient(3deg, $base-text-color 88%, $desktop-bg-color 0);
+    background-repeat: no-repeat;
+    height: 9vh;
+    padding: 1.6em;
+    padding-left: 9vw;
+
+    a {
+      @include media('>desktop') {
+        display: block;
+        max-width: 45%;
+
+        a:link,
+        a:visited {
+          color: $desktop-bg-color;
+        }
+      }
+
+      @include media('<=desktop') {
+
+      }
+
+      @include responsive-font(4vw, 2em, 3.6em);
+      color: $desktop-bg-color;
+    }
+  }
+
+  &__title {
+
+    a:link,
+    a:visited {
+      color: $desktop-bg-color;
+      font-weight: 100;
+      line-height: 1.1;
+    }
+  }
+
+  .home-page {
+    &__latestPosts {
+      h3 {
+        color: $site-light-text;
+      }
+    }
+  }
+
+  .page {
+    &__latestPosts {
+      h3 {
+        font-style: italic;
+      }
+    }
   }
 }
+
+// header {
+//   background: $base-text-color;
+//   background-image: linear-gradient(3deg, $base-text-color 88%, $desktop-bg-color 0);
+//   background-repeat: no-repeat;
+//   height: 9vh;
+//   padding: 1.6em;
+//   padding-left: 9vw;
+//
+//   a {
+//     @include media('>desktop') {
+//       display: block;
+//       max-width: 45%;
+//
+//       a:link,
+//       a:visited {
+//         color: $desktop-bg-color;
+//       }
+//     }
+//
+//     @include media('<=desktop') {
+//
+//     }
+//
+//     @include responsive-font(4vw, 2em, 3.6em);
+//     color: $desktop-bg-color;
+//   }
+// }
+
+
+
 
 main,
 aside,
@@ -75,7 +159,7 @@ footer {
 ///
 
 main {
-  border-bottom: 1vh solid $base-text-color;
+  //border-bottom: 1vh solid $base-text-color;
 
   h1 {
     font-weight: 300;
@@ -99,6 +183,21 @@ main {
     font-size: 0.75em;
   }
 }
+
+///
+/// Aside Specific styles
+///
+
+
+
+aside {
+  ul {
+    list-style: none;
+  }
+}
+
+
+
 ///
 /// Site Tags list(s)
 ///
